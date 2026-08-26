@@ -75,13 +75,14 @@ header {
     left: 0;
     width: 100%;
     z-index: 9999 !important;
-
+ 
+    
 
 
     background-color: rgb(230, 224, 226);
     position: sticky;
     top: 0;
-    height: 65px;
+    height: 67px;
     border: 2px solid var(--main-color);
 
 }
@@ -95,7 +96,8 @@ header .container {
 }
 
 header .container img {
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-bottom: 1px;
     width: 60px;
     height: 60px;
     border-radius: 90%;
@@ -234,8 +236,15 @@ header .container nav ul li a:hover {
 
 /* نهاية الهيدر */
 /* بداية الهيرو سكشن*/
-.call {
+.call button {
     position: relative;
+   width: 100px;
+   height: 30px;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   
+
 }
 
 .hero .container {
@@ -280,11 +289,15 @@ header .container nav ul li a:hover {
         position: relative;
         align-items: center;
         text-align: center;
+        right: 90px;
 
         .but {
             position: absolute;
             animation: none;
             top: 7px;
+            width: 70px;
+            height: 50px;
+           
 
         }
     }
@@ -329,16 +342,21 @@ header .container nav ul li a:hover {
 
 
 .hero .container .hero-info .call button {
-    width: 50px;
+    width: 130px;
     font-size: 18px;
     background-color: var(--main-color);
     color: rgb(0, 0, 0);
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.722);
+    border-radius: 5px;
+    /* border: 2px solid rgba(255, 255, 255, 0.722); */
+    border: none;
+    box-shadow: 0 0 3px black;
     display: flex;
     flex-direction: row;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     transition: 0, 3s;
+    padding-right: 3px;
+    transition: 0.3s;
+
 
 
 
@@ -346,9 +364,9 @@ header .container nav ul li a:hover {
 
 .hero .container .hero-info .call button:hover {
 
-    background-color: wheat;
-    color: var(--seconder-color);
-    transform: scale(1.3, 1.3);
+    background-color: rgba(189, 153, 106, 0.675); ;
+    color: white;
+    scale: 1.03;
 }
 
 .hero .container .hero-info .but {
@@ -960,7 +978,7 @@ hr {
 .our-team .team-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    gap: 25px;
 }
 
 .box {
@@ -1306,7 +1324,7 @@ hr {
 .testemonials .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 29px;
 
 
 
