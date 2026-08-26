@@ -1589,5 +1589,6 @@ footer .container a::after {
     width: 100%;
 } 
  html,body{
-    OverflowX: hidden !important;
+    overflow-x: hidden !important;
+    
 }
