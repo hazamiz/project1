@@ -753,6 +753,7 @@ header .container nav ul li a:hover {
 .collection .section-desc {
 
     color: whitesmoke;
+    margin-bottom: 40px;
 
 }
 
@@ -1583,3 +1584,7 @@ footer .container a::after {
 .btn-whatsapp i {
     font-size: 30px;
 }
+ script {
+    max-width: 768px;
+    width: 100%;
+} 
