@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الباقة الأساسية - الاشتراك المجاني</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #12020e;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 30px;
+      background: #1a0415;
+      border: 2px solid #cd7f32;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .package-card {
+      border: 1px solid #cd7f32;
+      border-radius: 12px;
+      padding: 25px 20px;
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .package-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .bronze-badge {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #e69c62 0%, #b86d29 70%, #6e3a0f 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px rgba(205, 127, 50, 0.4);
+      margin-bottom: 20px;
+      border: 4px solid #f3bf96;
+      color: #12020e;
+      font-weight: 900;
+    }
+
+    .badge-sub { font-size: 10px; letter-spacing: 1px; }
+    .badge-main { font-size: 22px; font-weight: bold; }
+
+    .price {
+      font-size: 38px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+
+    .features-list {
+      list-style: none;
+      width: 100%;
+      text-align: right;
+    }
+
+    .features-list li {
+      padding: 12px 0;
+      border-top: 1px solid rgba(205, 127, 50, 0.3);
+      position: relative;
+      padding-right: 20px;
+      font-size: 15px;
+    }
+
+    .features-list li::before {
+      content: "◄";
+      color: #cd7f32;
+      position: absolute;
+      right: 0;
+      top: 13px;
+      font-size: 12px;
+    }
+
+    .checkout-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
+    .form-title {
+      color: #cd7f32;
+      margin-bottom: 20px;
+      font-size: 22px;
+      border-bottom: 1px solid #cd7f32;
+      padding-bottom: 10px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #ddd;
+      font-size: 14px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #cd7f32;
+      background: #260720;
+      color: #fff;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .btn-subscribe {
+      width: 100%;
+      padding: 14px;
+      border-radius: 25px;
+      border: 1px solid #ffffff;
+      background: transparent;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .btn-subscribe:hover {
+      background: #cd7f32;
+      color: #12020e;
+      border-color: #cd7f32;
+    }
+
+    .success-msg {
+      display: none;
+      background: #2e7d32;
+      color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- بطاقة الباقة الأساسية -->
+    <div class="package-card">
+      <h2 class="package-title">الباقة الأساسية</h2>
+      
+      <div class="bronze-badge">
+        <span class="badge-sub">MEMBERSHIP</span>
+        <span class="badge-main">BRONZE</span>
+        <span class="badge-sub">MEMBERSHIP</span>
+      </div>
+
+      <div class="price">مجاناً</div>
+
+      <ul class="features-list">
+        <li>توصيل عادي خلال 5 أيام</li>
+        <li>عروض عامة</li>
+        <li>دعم فني عبر البريد</li>
+        <li>تنبيهات مبكرة للقطع الموشكة على النفاد</li>
+      </ul>
+    </div>
+
+    <!-- نموذج التسجيل المجاني -->
+    <div class="checkout-section">
+      <h3 class="form-title">التسجيل في الباقة الأساسية</h3>
+      
+      <form id="subscribeForm">
+        <div class="form-group">
+          <label>الاسم الكامل</label>
+          <input type="text" id="fullName" placeholder="أدخل اسمك الكامل" required>
+        </div>
+
+        <div class="form-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="email" placeholder="example@mail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>رقم الهاتف</label>
+          <input type="tel" id="phone" placeholder="05XXXXXXXX" required>
+        </div>
+
+        <button type="submit" class="btn-subscribe">تفعيل الاشتراك المجاني</button>
+      </form>
+
+      <div id="successMsg" class="success-msg">
+        تم تفعيل الباقة الأساسية المجانية بنجاح!
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('fullName').value;
+      
+      document.getElementById('subscribeForm').style.display = 'none';
+      const msg = document.getElementById('successMsg');
+      msg.innerText = `مرحباً بك ${name}! تم تفعيل اشتراكك في الباقة الأساسية بنجاح.`;
+      msg.style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>

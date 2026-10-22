@@ -1,0 +1,132 @@
+
+/*cairo*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
+/*almarai*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
+/*Instrument Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*reem kufi*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+ :root { 
+     --main-color: #d4af37; 
+    
+    /* --seconder-color: rgb(76, 21, 48);  */
+   --seconder-color : rgb(41, 1, 34);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Instrument Serif, tajawal;
+    direction: rtl;
+    height: 2000px;
+}
+
+
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #290122;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .about-container {
+      background-color: #581e4db8;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      
+      /* --- إعدادات خلفية الشعار --- */
+      background-image: url('../images/i.png'); /* ضعي مسار الشعار هنا */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 350px; /* يمكنك تكبير أو تصغير الشعار من هنا */
+    }
+
+    /* طبقة شفافة لتفتيح الشعار حتى يظل النص واضحاً ومقروءاً */
+    .about-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:#453d4483;; 
+      border-radius: 15px;
+      z-index: 1;
+      border: 1px solid #d4af37;
+    }
+
+    /* رفع المحتوى فوق طبقة الشفافية */
+    .main-title, .about-store-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-title {
+      text-align: center;
+      /* color: #2c3e50; */
+      color: #3f0434;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .main-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #30101b;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    #tadel {
+line-height: 2.2;       /* يزيد المسافة بين السطور داخل الخطوة الواحدة لراحة العين */
+    margin-bottom: 25px;    /
+
+    }
+    .footer-wish {
+    text-align: center;       /* يجعل الجملة في منتصف الصفحة تماماً */
+    font-size: 20px;          /* حجم خط ممتاز وواضح */
+    font-weight: bold;        /* يجعل الخط عريضاً ومميزاً */
+    color: #d4af37;           /* لون ذهبي أنيق يناسب اسم "إليغانس غلو" */
+    margin-top: 50px;         /* يترك مسافة كافية بين القائمة والجملة */
+    margin-bottom: 30px;      /* مسافة أمان من أسفل الصفحة */
+    font-family: 'Cairo', 'Segoe UI', sans-serif; /* نوع خط ناعم واحترافي */
+    z-index: 2;
+    position: relative;
+    font-family: 'reem kufi';
+    font-size: 25px;
+    font-weight: 500;
+}
+.footer-wish::after {
+
+ content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #30101b;
+      margin: 10px auto 0;
+      border-radius: 2px;
+
+
+
+
+}
+.about-store-text a:hover  {
+  color: #d4af37;
+}

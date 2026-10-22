@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عن المتجر - عالم الأناقة والجمال</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #290122;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .about-container {
+      background-color: #581e4db8;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      
+      /* --- إعدادات خلفية الشعار --- */
+      background-image: url('images/i.png'); /* ضعي مسار الشعار هنا */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 350px; /* يمكنك تكبير أو تصغير الشعار من هنا */
+    }
+
+    /* طبقة شفافة لتفتيح الشعار حتى يظل النص واضحاً ومقروءاً */
+    .about-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255, 255, 255, 0.771); 
+      border-radius: 15px;
+      z-index: 1;
+    }
+
+    /* رفع المحتوى فوق طبقة الشفافية */
+    .main-title, .about-store-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .main-title {
+      text-align: center;
+      /* color: #2c3e50; */
+      color: #3f0434;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .main-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background-color: #e91e63;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .about-store-text {
+      text-align: center;
+      line-height: 2.2;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      font-size: 1.15rem;
+      color: #333;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container">
+    <h1 class="main-title">عن متجرنا</h1>
+    
+    <p class="about-store-text">
+      أهلاً بكم في عالم الأناقة والجمال، وجهتكم الأولى والمثالية لتسوق أحدث صيحات الموضة والأزياء التي تلبي تطلعات كافة أفراد العائلة. نحن نفخر بتقديم تجربة تسوق فريدة ومتميزة تجمع بين العصرية، الأناقة، والجودة العالية التي تستحقونها. يضم متجرنا تشكيلة واسعة ومتنوعة من الأقسام التي صُممت بعناية لتناسب جميع الأذواق والمناسبات؛ بدءاً من قسم الألبسة النسائية الذي يتألق بأجمل الفساتين، والطقومة، والبيجامات المريحة، بالإضافة إلى تشكيلة ساحرة من الإكسسوارات، الأحذية، الحقائب، والمكياجات التي تكتمل بها إطلالتكِ. كما لم ننسَ أنيق الرجل، حيث وفرنا في القسم الرجالي أحدث القمصان، البناطلين، الكنزات، والطقومة الرسمية والرياضية بتصاميم مريحة وفاخرة. ولأن صغاركم هم سر سعادتنا، خصصنا قسماً مميزاً للصبيان يضم أحدث الطقومة والجينزات، وقسماً للبنات يفيض بالنعومة من فساتين وتوك شعر وإكسسوارات لطيفة. نحن نلتزم دائماً بتوفير أفضل خامات الأقمشة، وتنوع المقاسات، والأسعار المنافسة، مع حرصنا التام على تقديم خدمة عملاء استثنائية وتجربة تصفح سلسة وممتعة تعيد تعريف مفهوم التسوق الإلكتروني.
+    </p>
+  </div>
+<!-- زر اتصل بنا في الأسفل -->
+<a style=" 
+position: fixed;        /* يجعله ثابتاً في الأسفل حتى لو حركتِ الصفحة */
+  bottom: 20px;          /* المسافة من الأسفل */
+  left: 20px;            /* يمكنك تغييرها إلى right إذا أردتِ جهة اليمين */
+  background-color: #25d366; /* لون أخضر جذاب (أو ضعي لون متجرك #e91e63) */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;         /* ليظهر فوق كل كروت العناصر والـ HTML */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+ 
+.call-us-btn:hover {
+  transform: scale(1.08); 
+  background-color: #1eb954;
+
+}
+
+
+
+" href="tel:0912345678" class="call-us-btn">
+  📞 اتصل بنا
+</a>
+</body>
+</html>

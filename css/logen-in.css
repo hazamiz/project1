@@ -1,0 +1,176 @@
+
+/*cairo*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
+/*almarai*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
+/*Instrument Serif*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
+
+/*reem kufi*/
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+ :root { 
+     --main-color: rgb(189, 153, 106); 
+    
+    --seconder-color: rgb(76, 21, 48); 
+   
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* background-color: #290122; */
+      background-color:#12020e ;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .tit h1 {
+        color: #d4af37; 
+        text-align: center;
+        align-items: center;
+        font-family: 'cairo';
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+   
+     .about-log {
+      background-color: #581e4db8;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      padding: 40px 20px;
+      max-width: 450px;
+      margin: 0 auto;
+      position: relative;
+      
+      /* --- إعدادات خلفية الشعار --- */
+      background-image: url(../images/i.png); /* ضعي مسار الشعار هنا */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px; /* يمكنك تكبير أو تصغير الشعار من هنا */
+      height: 400px;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      overflow: hidden;
+      box-shadow: 1px 1px var(--main-color);
+    }
+
+    .about-log::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /* background-color: rgba(255, 255, 255, 0.633);  */
+      background-color: #453d4483;
+      border-radius: 15px;
+      border: 1px solid #d4af37;
+      z-index: 1;
+    }
+    .about-log form,
+    .about-log input,
+    .about-log select,
+    .about-log option,
+    .iktar,
+    .about-log button {
+        position: relative;
+        z-index: 2;
+    }
+    /* #username {
+        background-color: rgb(138, 118, 7);
+        font-size: 25px;
+        height: 45px;
+        width: 380px;
+        border-radius: 30px;
+        border: 2px solid var(--seconder-color);
+        margin-bottom: 15px;
+    }
+    #email {
+    background-color: rgb(138, 118, 7);
+        font-size: 25px;
+        height: 45px;
+        width: 380px;
+        border-radius: 30px;
+        border: 2px solid var(--seconder-color);
+        margin-bottom: 15px;
+    }
+    #password {
+    /* background-color: rgb(138, 118, 7); */
+    /* background-color: rgb(46, 44, 44);
+        font-size: 25px;
+        height: 45px;
+        width: 380px;
+        border-radius: 30px;
+        border: 2px solid var(--seconder-color); */
+    /* }
+    #username::placeholder{
+        color: rgba(255, 255, 255, 0.529);
+        align-items: center;
+        text-align: center;
+    }
+    #email::placeholder{
+    color: rgba(255, 255, 255, 0.529);
+        align-items: center;
+        text-align: center;
+    }
+    #password::placeholder{
+    color: rgba(255, 255, 255, 0.529);
+        align-items: center;
+        text-align: center;
+    } */ 
+
+    .about-log input {
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 15px ;
+        background-color: rgb(28,0,24) !important;
+        color: #fff;
+        border: 1.5px solid #d4af37;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    .about-log select {
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 15px ;
+        background-color: rgb(28,0,24) !important;
+        color: #fff;
+        border: 1px solid #d4af37;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    .about-log button {
+        padding: 10px 20px;
+        border-radius: 6px;
+        border: 1px solid #d4af37;
+        background-color: rgb(28,0,24);
+        cursor: pointer;
+        margin-left: 50px;
+        transition: 0.3s;
+        color: #d4af37;
+    }
+    .about-log button:hover {
+        background-color: #d4af37;
+        color: rgb(28,0,24);
+    }

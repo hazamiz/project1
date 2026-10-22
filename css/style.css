@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /*cairo*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&display=swap');
 /*almarai*/
@@ -8,9 +14,13 @@
 /*reem kufi*/
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Bebas+Neue&family=Cairo:wght@200..1000&family=Germania+One&family=Instrument+Serif:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Reem+Kufi:wght@400..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 
-:root {
-    --main-color: rgb(189, 153, 106);
-    --seconder-color: rgb(76, 21, 48);
+ :root { 
+       --main-color: rgb(189, 153, 106);  
+
+  
+    
+    /* --seconder-color: rgb(76, 21, 48);  */
+   --seconder-color : rgb(41, 1, 34);
 }
 
 * {
@@ -29,6 +39,297 @@ body {
     direction: rtl;
     height: 2000px;
 }
+
+
+
+
+
+
+
+.dark-mode {
+ --main-color:#654d54;
+ --seconder-color:#3a1d13;
+ 
+
+}
+.dark-mode .all-servizes .servize::before {
+    background-color: var(--seconder-color);
+    width: 3px;
+
+}
+.dark-mode .all-servizes .servize {
+    h3 {
+        color: var(--seconder-color);
+        font-weight: 700;
+        font-size: 20px;
+    }
+    box-shadow: 0 0 3px black;
+     background-color: #c7bb869f;
+     color: black;
+   
+}
+
+.dark-mode .all-servizes .servize:hover {
+    h3 {
+        color:#c7bb86c7 ;
+    }
+    color: white;
+}
+
+.dark-mode .all-servizes .servize:hover::before{
+     background-color:#c7bb86c7 ;  
+}
+
+
+
+.dark-mode .stat {
+     background-color: #fff3c09f;
+}
+.dark-mode body {
+    background-color:#3a1d13 ;
+}
+.dark-mode .hero {
+    background-color: rgba(0, 0, 0, 0.503);
+}
+
+.dark-mode .our-team {
+    background-color: rgba(0, 0, 0, 0.503);
+}
+.dark-mode header{
+    color: white;
+  background-color:rgb(137, 126, 137);
+  
+}
+.dark-mode header .social i{
+    color: #eee;
+}
+.dark-mode .hero-info {
+    color: white;
+}
+.dark-mode .lon {
+color: white;
+}
+.dark-mode .loll {
+    color:#fff3c09f;
+    font-size: 55px;
+    text-align: center;
+    align-items: center;
+    
+    
+
+}
+.dark-mode .testemonials .container .testi {
+    border: 2px solid var(--seconder-color);
+    transition: 0.4s;
+    .t-testi {
+        color: var(--seconder-color);
+    }
+}
+.dark-mode .testemonials .container .testi:hover {
+/* background-color: rgba(0, 0, 0, 0.764); */
+background-color:   rgb(38, 10, 24)    ;
+border: none;
+box-shadow: 0 0  2px #ccc;
+
+h3 {
+    color: var(--main-color);
+    font-weight: 750;
+} 
+.t-testi {
+    color: var(--main-color);
+}
+}
+
+    
+
+
+
+
+
+.dark-mode .box {
+      background-color: #fff3c09f;
+      border: 2px solid var(--main-color);
+}
+.dark-mode .port-container .port .info {
+    background-color: rgba(0, 0, 0, 0.538);
+}
+.dark-mode .statistcs h2 {
+    font-size: 30px;
+}
+.dark-mode .statistcs .container .stat {
+
+
+    background-color: #fff3c09f;
+    color: black;
+    border-color: var(--seconder-color);
+    box-shadow: 2px 2px 2px 2px var(--seconder-color);
+    transition: 0,3s;
+    
+}
+.dark-mode .statistcs .container .stat:hover {
+
+        border-color: #ccc;
+        color: #ccc;
+}
+ 
+
+
+.dark-mode .social i {
+    background-color: #fff3c09f;
+}
+.dark-mode .about-us {
+    background-color: rgba(0, 0, 0, 0.503);
+}
+.dark-mode .collection {
+    background-color:rgba(0, 0, 0, 0.503); ;
+}
+.dark-mode .pricing-section {
+    background-color: rgba(0, 0, 0, 0.503);
+}
+.dark-mode footer {
+    background-color: rgba(0, 0, 0, 0.503);
+}
+
+.dark-mode header {
+    position: relative;
+}
+/* .dark-mode .themetoggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999999;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 18px;
+    border: 1px solid #dddddd;
+     border-radius: 30px;
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-family: sans-serif;
+     font-weight: bold;
+     box-shadow: 0 4px 12px rgpa(0,0,0,0.1);
+     transition: all 0.3s  ease ;
+}
+.dark-mode.themetoggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgpa(0,0,0,0.15);
+}
+
+
+
+
+
+    cursor: pointer;
+position: absolute;
+right: 5px;
+} */
+.dark-mode { 
+.hero .container {
+        flex-direction: column-reverse;
+    }
+
+    .hero .container .hero-img img {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero .container .hero-info .main-title {
+        font-size: 45px;
+        text-align: center;
+
+    }
+
+    .hero .container .hero-info h2 {
+        text-align: center;
+
+    }
+
+    .hero .container .hero-info p {
+        text-align: center;
+         width: 100%;
+    }
+
+    .hero .container .hero-info .call {
+
+        /* display: flex;
+       justify-content: start;
+       
+    
+        margin-right: 50px; */
+        position: relative;
+        align-items: center;
+        text-align: center;
+        right: 320px;
+
+        .but {
+            position: absolute;
+            animation: none;
+            top: 7px;
+            width: 70px;
+            height: 50px;
+           
+
+        }
+    }
+
+    .hero .container .hero-img img {
+        display: none;
+    }
+
+
+}
+
+.dark-mode .container .social i {
+    color: black;
+    background-color: #fff3c09f ;
+    margin-top: 20px;
+}
+
+.dark-mode .container .social i:hover {
+    color: white;
+}
+.dark-mode .hero .container .hero-info .call button {
+    background-color: #fff3c09f;
+}
+.dark-mode .hero .container .hero-info .call button:hover {
+    background-color: var(--main-color);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lon {
+ color: rgb(189,153,106)
+ 
+
+}
+
 
 ul {
     list-style: none;
@@ -188,7 +489,8 @@ header .container nav ul li a {
 header .container nav ul li a.active,
 header .container nav ul li a:hover {
     color: white;
-    background-color: rgba(189, 153, 106, 0.66);
+    background-color: var(--main-color);
+    /* background-color: rgba(189, 153, 106, 0.66); */
     height: 55px;
 }
 
@@ -465,7 +767,7 @@ header .container nav ul li a:hover {
 
 .all-servizes .servize:hover {
     transform: translate(-5px, -5px);
-    background-color: rgba(58, 8, 2, 0.602);
+    /* background-color: rgba(58, 8, 2, 0.602); */
     /* background-color: #3d000d; */
 
 }
@@ -662,7 +964,7 @@ header .container nav ul li a:hover {
 }
 
 .statistcs .container .stat:hover {
-    background-color: rgba(58, 8, 2, 0.602);
+    /* background-color: rgba(58, 8, 2, 0.602); */
     transform: scale(1.1);
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
@@ -696,19 +998,28 @@ header .container nav ul li a:hover {
 .collection .all-collection {
     display: grid;
     grid: row;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
+;
+
 
 }
 
 .collection .all-collection .outfit {
 
-    background-color: rgba(76, 36, 44, 0.329);
+    /* background-color: rgba(76, 36, 44, 0.329); */
+    background-color:rgb(188, 160, 138);
+    /* border-radius: 45px 45px 0% 0%; */
     text-align: center;
     cursor: pointer;
     transition: 0.3;
     position: relative;
-
+    border-width: 3px;
+    border-color: rgba(184, 135, 11, 0.67);
+    border-style: solid;
+    /* box-shadow: 2px 2px  rgba(184, 135, 11, 0.476); */
+     /* rgba(0, 0, 0, 0.315);
+     */
 }
 
 /* .collection .all-collection .outfit:hover {
@@ -722,21 +1033,24 @@ header .container nav ul li a:hover {
 
 
 .collection .all-collection .outfit:hover img {
-    box-shadow: -3px -3px 3px 3px rgb(184, 135, 11, 0.48);
-    transform: translateY(-8px)
+    /* box-shadow: -3px -3px 3px 3px rgb(184, 135, 11, 0.48);
+    transform: translateY(-8px) */
+    transform: translateY(-4px);
 }
 
 .collection .all-collection .outfit:hover button {
-    box-shadow: -3px -3px 3px 3px rgb(184, 135, 11, 0.48);
+    /* box-shadow: -3px -3px 3px 3px rgb(184, 135, 11, 0.48); */
 }
 
 
 .collection .all-collection .outfit img {
-    border-width: 3px;
-    border-color: rgba(184, 135, 11, 0.48);
+    border-width: 2px;
+    /* border-color: rgba(184, 135, 11, 0.48); */
+    border-color:var(--seconder-color);
     border-style: solid;
     border-radius: 20%;
     transition: 0.3s;
+   margin-top:7px ;
 
 
 }
@@ -758,15 +1072,22 @@ header .container nav ul li a:hover {
 }
 
 .collection .all-collection .outfit .outfit-title {
-    color: var(--main-color);
+    color: var(--seconder-color);
     margin-top: 10px;
     margin-bottom: 10px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .collection .all-collection .outfit p {
     line-height: 1.7;
     margin-bottom: 15px;
-
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 3px;
 }
 
 .haz {
@@ -775,8 +1096,13 @@ header .container nav ul li a:hover {
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
+  
 }
-
+.lone {
+    color: black;
+    font-size: 17px;
+    font-weight:700;
+}
 .haz div :first-child {
     color: rgb(255, 19, 19);
     font-weight: 700;
@@ -784,21 +1110,25 @@ header .container nav ul li a:hover {
 }
 
 .zzz {
-    font-size: 20px;
-    color: var(--main-color)
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--seconder-color);
+  
+    
 }
 
 hr {
     width: 80%;
     transform: translate(-10%);
     margin-bottom: 15px;
+
 }
 
 .outfit-detailes {
 
 
-    border-width: 3px;
-    border-color: rgba(184, 135, 11, 0.67);
+    border-width: 2px;
+    border-color: var(--seconder-color);
     border-style: solid;
 
 
@@ -811,11 +1141,13 @@ hr {
     height: 30px;
     font-size: 15px;
     cursor: pointer;
+    margin-bottom: 7px;
+    transition: 0.2s;
 }
 
 .outfit-detailes:hover {
-    transform: scale(1.1);
-    background-color: #ccc;
+    transform: scale(1.06);
+   
 }
 
 
@@ -850,6 +1182,7 @@ hr {
     margin-left: 1px;
     font-size: 13px;
     margin-right: 5px;
+    color: black;
 
 }
 
@@ -1592,3 +1925,9 @@ footer .container a::after {
     overflow-x: hidden !important;
     
 }
+
+
+
+
+
+
